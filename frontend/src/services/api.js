@@ -1,7 +1,10 @@
 ﻿import axios from 'axios';
 
+// Direct hardcoded backend URL
+const API_URL = 'https://skill-bridge-mern-livid.vercel.app/api';
+
 const api = axios.create({
-  baseURL: 'https://skill-bridge-mern-livid.vercel.app/api',
+  baseURL: API_URL,
   headers: { 'Content-Type': 'application/json' },
 });
 
